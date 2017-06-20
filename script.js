@@ -1,10 +1,9 @@
 $( document ).ready(function() {
  welcome('Hello')
-})
 
 function welcome() {
     var name= getUsername();
-   $("#welcome").html('<h4>Bienvenue '+name+', <br> soyez pret à renouveler de nouveaux défis !</h4>');
+   $("#welcome").html('<h4>Bienvenue '+name+', <br> soyez pret à découvrir de nouveaux défis !</h4>');
 };
 
 function setCookie(cname, cvalue, exdays) {
@@ -27,7 +26,7 @@ function getCookie(cname) {
 
 function getUsername() {
     //recupere la valeur du cookie username
-    var user = getCookie("username");
+    var user = getCookie("username"); alert("err2");
 
     // si le cookie est différent de la chaine de caractére vide
     if (user != "") {
@@ -44,4 +43,5 @@ function getUsername() {
     }
 }
 
-getUsername();
+
+})
